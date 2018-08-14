@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Title</title>
+
+    <link href="/sb005/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/sb005/bootstrapTable/bootstrap-table.min.css" rel="stylesheet">
+
+    <script src="/sb005/jquery/jquery.min.js"></script>
+    <script src="/sb005/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/sb005/bootstrapTable/bootstrap-table.min.js"></script>
+    <script src="/sb005/bootstrapTable/locale/bootstrap-table-zh-CN.min.js"></script>
+
+    <script type="text/javascript">
+        function htmlSorter(a, b) {
+            var a = $(a).text();
+            var b = $(b).text();
+            if (a < b) return -1;
+            if (a > b) return 1;
+            return 0;
+        }
+
+//        $(function () {
+//            alert($("#ss").text());
+//        })
+    </script>
+</head>
+<body>
+<table data-toggle="table">
+    <thead>
+    <tr>
+        <th data-field="description" data-sortable="true" data-sorter="htmlSorter">Description</th>
+        <th data-field="year" data-sortable="true">Year Published</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td id="ss">
+            <a href="resource3.html">
+                <h1>Alice in Wonderland</h1>
+                <h2>Lewis Carroll</h2>
+            </a>
+        </td>
+        <td>1865</td>
+    </tr>
+    <tr>
+        <td>
+            <a href="resource4.html">
+                <h1>Winnie the Pooh</h1>
+                <h2>A. A. Milne</h2>
+            </a>
+        </td>
+        <td>1926</td>
+    </tr>
+    <tr>
+        <td>
+            <a href="resource2.html">
+                <h1>The Cat in the Hat</h1>
+                <h2>Dr. Seuss</h2>
+            </a>
+        </td>
+        <td>1957</td>
+    </tr>
+    <tr>
+        <td>
+            <a href="resource1.html">
+                <h1>Charlotte's Web</h1>
+                <h2>E. B. White</h2>
+            </a>
+        </td>
+        <td>1952</td>
+    </tr>
+    </tbody>
+</table>
+
+</body>
+</html>

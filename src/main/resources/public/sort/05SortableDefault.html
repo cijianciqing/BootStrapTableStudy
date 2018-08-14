@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Title</title>
+
+    <link href="/sb005/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/sb005/bootstrapTable/bootstrap-table.min.css" rel="stylesheet">
+
+    <script src="/sb005/jquery/jquery.min.js"></script>
+    <script src="/sb005/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/sb005/bootstrapTable/bootstrap-table.min.js"></script>
+    <script src="/sb005/bootstrapTable/locale/bootstrap-table-zh-CN.min.js"></script>
+
+    <script type="text/javascript">
+        $.extend($.fn.bootstrapTable.columnDefaults, {
+            sortable: true
+        });
+
+        $(function() {
+            $('.bootstrapTable').bootstrapTable();
+        });
+    </script>
+</head>
+<body>
+<div class="col-md-offset-3 col-md-6">
+    <table class="bootstrapTable">
+        <thead>
+        <tr>
+            <th>Header1</th>
+            <th>Header2</th>
+            <th>Header3</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>2</td>
+            <td>1</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>2</td>
+            <td>1</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>
